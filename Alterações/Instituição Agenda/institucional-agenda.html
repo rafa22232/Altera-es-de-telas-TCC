@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="institucional-agenda.css">
+<div id="institutional-agenda">
+  <div class="agenda-container">
+    <h1>Agenda</h1>
+    <div class="calendar-header">
+      <div class="year-box">
+        <input type="number" id="year" value="2025" min="1500" max="5000" />
+      </div>
+      <div class="month-box">
+        <select id="month">
+          <option value="0">janeiro</option>
+          <option value="1">fevereiro</option>
+          <option value="2">março</option>
+          <option value="3">abril</option>
+          <option value="4">maio</option>
+          <option value="5">junho</option>
+          <option value="6">julho</option>
+          <option value="7" selected>agosto</option>
+          <option value="8">setembro</option>
+          <option value="9">outubro</option>
+          <option value="10">novembro</option>
+          <option value="11">dezembro</option>
+        </select>
+      </div>
+    </div>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>DOMINGO</th>
+          <th>SEGUNDA-FEIRA</th>
+          <th>TERÇA-FEIRA</th>
+          <th>QUARTA-FEIRA</th>
+          <th>QUINTA-FEIRA</th>
+          <th>SEXTA-FEIRA</th>
+          <th>SÁBADO</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+    <div class="notes-section">
+        <label for="notes" class="notes-label">Anotações:</label>
+        <textarea id="notes" placeholder="Escreva suas anotações aqui..."></textarea>
+      </div>
+  </div>
+</div>
+<script src="institucional-agenda.js" defer></script>
